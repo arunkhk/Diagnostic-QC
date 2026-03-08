@@ -1,0 +1,2 @@
+/Users/arunkhanka/AndroidStudioProjects/android-projects/QC/android/app/.cxx/debug/1h4q1u42/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/arunkhanka/AndroidStudioProjects/android-projects/QC/android/app/.cxx/debug/1h4q1u42/arm64-v8a/CMakeFiles/rebuild_cache.dir

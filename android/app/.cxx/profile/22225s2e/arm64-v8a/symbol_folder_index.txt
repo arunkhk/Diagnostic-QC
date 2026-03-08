@@ -1,0 +1,1 @@
+/Users/arunkhanka/AndroidStudioProjects/android-projects/QC/android/app/build/intermediates/cxx/profile/22225s2e/obj/arm64-v8a

@@ -1,0 +1,489 @@
+{
+  "testCategories": {
+    "auto": [
+      {
+        "uniqueTestKey": "wifi",
+        "testName": "WiFi",
+        "description": "Auto-detects WiFi connectivity",
+        "requiresUserInput": false,
+        "autoPass": true
+      },
+      {
+        "uniqueTestKey": "bluetooth",
+        "testName": "Bluetooth",
+        "description": "Auto-detects Bluetooth connectivity",
+        "requiresUserInput": false,
+        "autoPass": true
+      },
+      {
+        "uniqueTestKey": "location",
+        "testName": "GPS",
+        "description": "Auto-detects GPS/Location services",
+        "requiresUserInput": false,
+        "autoPass": true
+      },
+      {
+        "uniqueTestKey": "light",
+        "testName": "Light Sensor",
+        "description": "Auto-detects light sensor (auto-passes on iOS)",
+        "requiresUserInput": false,
+        "autoPass": true
+      },
+      {
+        "uniqueTestKey": "proximity",
+        "testName": "Proxy",
+        "description": "Auto-detects proximity sensor",
+        "requiresUserInput": false,
+        "autoPass": true
+      },
+      {
+        "uniqueTestKey": "accelerometer",
+        "testName": "Accelerometer",
+        "description": "Auto-detects accelerometer sensor",
+        "requiresUserInput": false,
+        "autoPass": true
+      },
+      {
+        "uniqueTestKey": "gyrosensor",
+        "testName": "GyroSensor",
+        "description": "Auto-detects gyroscope sensor",
+        "requiresUserInput": false,
+        "autoPass": true
+      },
+      {
+        "uniqueTestKey": "magnet",
+        "testName": "Magnet Sensor",
+        "description": "Auto-detects magnetometer sensor",
+        "requiresUserInput": false,
+        "autoPass": true
+      },
+      {
+        "uniqueTestKey": "battery",
+        "testName": "Battery Health",
+        "description": "Auto-detects battery health and status",
+        "requiresUserInput": false,
+        "autoPass": true
+      },
+      {
+        "uniqueTestKey": "charging",
+        "testName": "Charging",
+        "description": "Auto-detects charger connection (auto-passes if connected)",
+        "requiresUserInput": false,
+        "autoPass": true
+      },
+      {
+        "uniqueTestKey": "sdcard",
+        "testName": "SD Card",
+        "description": "Auto-detects SD card availability",
+        "requiresUserInput": false,
+        "autoPass": true
+      },
+      {
+        "uniqueTestKey": "networks",
+        "testName": "Network",
+        "description": "Auto-detects network connectivity",
+        "requiresUserInput": false,
+        "autoPass": true
+      },
+      {
+        "uniqueTestKey": "headphones",
+        "testName": "Headphone",
+        "description": "Auto-detects headphone connection",
+        "requiresUserInput": false,
+        "autoPass": true
+      },
+      {
+        "uniqueTestKey": "otg",
+        "testName": "OTG",
+        "description": "Auto-detects OTG connectivity",
+        "requiresUserInput": false,
+        "autoPass": true
+      },
+      {
+        "uniqueTestKey": "nfc",
+        "testName": "NFC Detection",
+        "description": "Auto-detects NFC availability (if supported)",
+        "requiresUserInput": false,
+        "autoPass": true
+      }
+    ],
+    "userInput": [
+      {
+        "uniqueTestKey": "touch",
+        "testName": "Touch",
+        "description": "User must drag finger across screen (auto-navigates when complete)",
+        "requiresUserInput": true,
+        "inputType": "gesture",
+        "autoPass": false,
+        "autoNavigate": true
+      },
+      {
+        "uniqueTestKey": "color",
+        "testName": "Color",
+        "description": "User clicks through color screens (guided)",
+        "requiresUserInput": true,
+        "inputType": "button_clicks",
+        "autoPass": false,
+        "autoNavigate": false
+      },
+      {
+        "uniqueTestKey": "brightness",
+        "testName": "Brightness",
+        "description": "User adjusts screen brightness (guided)",
+        "requiresUserInput": true,
+        "inputType": "slider",
+        "autoPass": false,
+        "autoNavigate": false
+      },
+      {
+        "uniqueTestKey": "flashlight",
+        "testName": "Flash Light",
+        "description": "User inputs flashlight count (1-5)",
+        "requiresUserInput": true,
+        "inputType": "number_input",
+        "autoPass": false,
+        "autoNavigate": false
+      },
+      {
+        "uniqueTestKey": "microphone",
+        "testName": "Microphone",
+        "description": "User speaks into microphone (auto-detects)",
+        "requiresUserInput": true,
+        "inputType": "audio",
+        "autoPass": false,
+        "autoNavigate": false
+      },
+      {
+        "uniqueTestKey": "speaker",
+        "testName": "Speaker",
+        "description": "User listens to speaker test (auto-detects)",
+        "requiresUserInput": true,
+        "inputType": "audio_playback",
+        "autoPass": false,
+        "autoNavigate": false
+      },
+      {
+        "uniqueTestKey": "vibration",
+        "testName": "Vibration",
+        "description": "User feels vibration (auto-triggers)",
+        "requiresUserInput": true,
+        "inputType": "haptic",
+        "autoPass": false,
+        "autoNavigate": false
+      },
+      {
+        "uniqueTestKey": "sar",
+        "testName": "Sar Value",
+        "description": "User inputs SAR level value",
+        "requiresUserInput": true,
+        "inputType": "number_input",
+        "autoPass": false,
+        "autoNavigate": false
+      }
+    ],
+    "manual": [
+      {
+        "uniqueTestKey": "volume",
+        "testName": "Volume Up",
+        "description": "User must press volume button",
+        "requiresUserInput": true,
+        "inputType": "hardware_button",
+        "autoPass": false,
+        "autoNavigate": false
+      },
+      {
+        "uniqueTestKey": "power",
+        "testName": "Power Button",
+        "description": "User must press power button",
+        "requiresUserInput": true,
+        "inputType": "hardware_button",
+        "autoPass": false,
+        "autoNavigate": false
+      },
+      {
+        "uniqueTestKey": "back",
+        "testName": "Back Button",
+        "description": "User must press back button",
+        "requiresUserInput": true,
+        "inputType": "hardware_button",
+        "autoPass": false,
+        "autoNavigate": false
+      },
+      {
+        "uniqueTestKey": "home",
+        "testName": "Home Button",
+        "description": "User must press home button",
+        "requiresUserInput": true,
+        "inputType": "hardware_button",
+        "autoPass": false,
+        "autoNavigate": false
+      },
+      {
+        "uniqueTestKey": "menu",
+        "testName": "Menu Button",
+        "description": "User must press menu button",
+        "requiresUserInput": true,
+        "inputType": "hardware_button",
+        "autoPass": false,
+        "autoNavigate": false
+      },
+      {
+        "uniqueTestKey": "rotation",
+        "testName": "Rotation",
+        "description": "User must rotate device",
+        "requiresUserInput": true,
+        "inputType": "device_rotation",
+        "autoPass": false,
+        "autoNavigate": false
+      },
+      {
+        "uniqueTestKey": "fingerprint",
+        "testName": "Finger Print",
+        "description": "User must scan fingerprint",
+        "requiresUserInput": true,
+        "inputType": "biometric",
+        "autoPass": false,
+        "autoNavigate": false
+      },
+      {
+        "uniqueTestKey": "facelock",
+        "testName": "Face Lock",
+        "description": "User must scan face",
+        "requiresUserInput": true,
+        "inputType": "biometric",
+        "autoPass": false,
+        "autoNavigate": false
+      },
+      {
+        "uniqueTestKey": "multitouch",
+        "testName": "Multi Touch",
+        "description": "User must perform multi-touch gestures",
+        "requiresUserInput": true,
+        "inputType": "multi_gesture",
+        "autoPass": false,
+        "autoNavigate": false
+      },
+      {
+        "uniqueTestKey": "cameras",
+        "testName": "Front Camera",
+        "description": "User must take photos with camera",
+        "requiresUserInput": true,
+        "inputType": "camera",
+        "autoPass": false,
+        "autoNavigate": false
+      }
+    ]
+  },
+  "testCombinations": {
+    "scenario1_autoOnly": {
+      "scenarioId": 1,
+      "scenarioName": "Auto Tests Only",
+      "description": "Only automatic tests that require no user interaction",
+      "testTypes": ["auto"],
+      "tests": [
+        {"diagnoseParamID": 1, "paramValue": "Wifi", "paramTypeID": 11, "displayOrder": 0, "catIcon": "Wifi.png", "subscriptionID": 3, "uniqueTestKey": "wifi"},
+        {"diagnoseParamID": 2, "paramValue": "Bluetooth", "paramTypeID": 11, "displayOrder": 1, "catIcon": "Bluetooth.png", "subscriptionID": 3, "uniqueTestKey": "bluetooth"},
+        {"diagnoseParamID": 3, "paramValue": "GPS", "paramTypeID": 11, "displayOrder": 2, "catIcon": "GPS.png", "subscriptionID": 3, "uniqueTestKey": "location"},
+        {"diagnoseParamID": 13, "paramValue": "Battery Health", "paramTypeID": 11, "displayOrder": 3, "catIcon": "BatteryHealth.png", "subscriptionID": 3, "uniqueTestKey": "battery"},
+        {"diagnoseParamID": 12, "paramValue": "Charging", "paramTypeID": 11, "displayOrder": 4, "catIcon": "Charging.png", "subscriptionID": 3, "uniqueTestKey": "charging"},
+        {"diagnoseParamID": 28, "paramValue": "SD Card", "paramTypeID": 11, "displayOrder": 5, "catIcon": "SDCard.png", "subscriptionID": 3, "uniqueTestKey": "sdcard"},
+        {"diagnoseParamID": 7, "paramValue": "Network", "paramTypeID": 11, "displayOrder": 6, "catIcon": "Network.png", "subscriptionID": 3, "uniqueTestKey": "networks"},
+        {"diagnoseParamID": 25, "paramValue": "Light Sensor", "paramTypeID": 11, "displayOrder": 7, "catIcon": "LightSensor.png", "subscriptionID": 3, "uniqueTestKey": "light"},
+        {"diagnoseParamID": 29, "paramValue": "Proxy", "paramTypeID": 11, "displayOrder": 8, "catIcon": "Proxy.png", "subscriptionID": 3, "uniqueTestKey": "proximity"}
+      ]
+    },
+    "scenario2_userInputOnly": {
+      "scenarioId": 2,
+      "scenarioName": "User Input Tests Only",
+      "description": "Tests that require user interaction but are guided",
+      "testTypes": ["userInput"],
+      "tests": [
+        {"diagnoseParamID": 1, "paramValue": "Wifi", "paramTypeID": 11, "displayOrder": 0, "catIcon": "Wifi.png", "subscriptionID": 3, "uniqueTestKey": "wifi"},
+        {"diagnoseParamID": 2, "paramValue": "Bluetooth", "paramTypeID": 11, "displayOrder": 1, "catIcon": "Bluetooth.png", "subscriptionID": 3, "uniqueTestKey": "bluetooth"},
+        {"diagnoseParamID": 3, "paramValue": "GPS", "paramTypeID": 11, "displayOrder": 2, "catIcon": "GPS.png", "subscriptionID": 3, "uniqueTestKey": "location"},
+        {"diagnoseParamID": 14, "paramValue": "Touch", "paramTypeID": 11, "displayOrder": 3, "catIcon": "Touch.png", "subscriptionID": 3, "uniqueTestKey": "touch"},
+        {"diagnoseParamID": 34, "paramValue": "Color", "paramTypeID": 11, "displayOrder": 4, "catIcon": "Color.png", "subscriptionID": 3, "uniqueTestKey": "color"},
+        {"diagnoseParamID": 21, "paramValue": "Brightness", "paramTypeID": 11, "displayOrder": 5, "catIcon": "Brightness.png", "subscriptionID": 3, "uniqueTestKey": "brightness"},
+        {"diagnoseParamID": 6, "paramValue": "Flash Light", "paramTypeID": 11, "displayOrder": 6, "catIcon": "Flashlight.png", "subscriptionID": 3, "uniqueTestKey": "flashlight"},
+        {"diagnoseParamID": 10, "paramValue": "Microphone", "paramTypeID": 11, "displayOrder": 7, "catIcon": "Microphone.png", "subscriptionID": 3, "uniqueTestKey": "microphone"},
+        {"diagnoseParamID": 38, "paramValue": "Speaker", "paramTypeID": 11, "displayOrder": 8, "catIcon": "Speaker.png", "subscriptionID": 3, "uniqueTestKey": "speaker"},
+        {"diagnoseParamID": 9, "paramValue": "Vibration", "paramTypeID": 11, "displayOrder": 9, "catIcon": "Vibration.png", "subscriptionID": 3, "uniqueTestKey": "vibration"}
+      ]
+    },
+    "scenario3_manualOnly": {
+      "scenarioId": 3,
+      "scenarioName": "Manual Tests Only",
+      "description": "Tests that require full manual user interaction",
+      "testTypes": ["manual"],
+      "tests": [
+        {"diagnoseParamID": 1, "paramValue": "Wifi", "paramTypeID": 11, "displayOrder": 0, "catIcon": "Wifi.png", "subscriptionID": 3, "uniqueTestKey": "wifi"},
+        {"diagnoseParamID": 2, "paramValue": "Bluetooth", "paramTypeID": 11, "displayOrder": 1, "catIcon": "Bluetooth.png", "subscriptionID": 3, "uniqueTestKey": "bluetooth"},
+        {"diagnoseParamID": 3, "paramValue": "GPS", "paramTypeID": 11, "displayOrder": 2, "catIcon": "GPS.png", "subscriptionID": 3, "uniqueTestKey": "location"},
+        {"diagnoseParamID": 15, "paramValue": "Volume Up", "paramTypeID": 11, "displayOrder": 3, "catIcon": "VolumeUp.png", "subscriptionID": 3, "uniqueTestKey": "volume"},
+        {"diagnoseParamID": 22, "paramValue": "Power Button", "paramTypeID": 11, "displayOrder": 4, "catIcon": "PowerButton.png", "subscriptionID": 3, "uniqueTestKey": "power"},
+        {"diagnoseParamID": 19, "paramValue": "Back Button", "paramTypeID": 11, "displayOrder": 5, "catIcon": "BackButton.png", "subscriptionID": 3, "uniqueTestKey": "back"},
+        {"diagnoseParamID": 23, "paramValue": "Home Button", "paramTypeID": 11, "displayOrder": 6, "catIcon": "HomeButton.png", "subscriptionID": 3, "uniqueTestKey": "home"},
+        {"diagnoseParamID": 18, "paramValue": "Menu Button", "paramTypeID": 11, "displayOrder": 7, "catIcon": "MenuButton.png", "subscriptionID": 3, "uniqueTestKey": "menu"},
+        {"diagnoseParamID": 17, "paramValue": "Rotation", "paramTypeID": 11, "displayOrder": 8, "catIcon": "Rotation.png", "subscriptionID": 3, "uniqueTestKey": "rotation"},
+        {"diagnoseParamID": 16, "paramValue": "Finger Print", "paramTypeID": 11, "displayOrder": 9, "catIcon": "FingerPrint.png", "subscriptionID": 3, "uniqueTestKey": "fingerprint"},
+        {"diagnoseParamID": 27, "paramValue": "Face Lock", "paramTypeID": 11, "displayOrder": 10, "catIcon": "FaceLock.png", "subscriptionID": 3, "uniqueTestKey": "facelock"},
+        {"diagnoseParamID": 35, "paramValue": "Multi Touch", "paramTypeID": 11, "displayOrder": 11, "catIcon": "MultiTouch.png", "subscriptionID": 3, "uniqueTestKey": "multitouch"},
+        {"diagnoseParamID": 4, "paramValue": "Front Camera", "paramTypeID": 11, "displayOrder": 12, "catIcon": "FrontCamera.png", "subscriptionID": 3, "uniqueTestKey": "cameras"}
+      ]
+    },
+    "scenario4_mixed_autoAndUserInput": {
+      "scenarioId": 4,
+      "scenarioName": "Mixed: Auto + User Input",
+      "description": "Combination of automatic tests and user input tests",
+      "testTypes": ["auto", "userInput"],
+      "tests": [
+        {"diagnoseParamID": 1, "paramValue": "Wifi", "paramTypeID": 11, "displayOrder": 0, "catIcon": "Wifi.png", "subscriptionID": 3, "uniqueTestKey": "wifi"},
+        {"diagnoseParamID": 2, "paramValue": "Bluetooth", "paramTypeID": 11, "displayOrder": 1, "catIcon": "Bluetooth.png", "subscriptionID": 3, "uniqueTestKey": "bluetooth"},
+        {"diagnoseParamID": 3, "paramValue": "GPS", "paramTypeID": 11, "displayOrder": 2, "catIcon": "GPS.png", "subscriptionID": 3, "uniqueTestKey": "location"},
+        {"diagnoseParamID": 14, "paramValue": "Touch", "paramTypeID": 11, "displayOrder": 3, "catIcon": "Touch.png", "subscriptionID": 3, "uniqueTestKey": "touch"},
+        {"diagnoseParamID": 13, "paramValue": "Battery Health", "paramTypeID": 11, "displayOrder": 4, "catIcon": "BatteryHealth.png", "subscriptionID": 3, "uniqueTestKey": "battery"},
+        {"diagnoseParamID": 12, "paramValue": "Charging", "paramTypeID": 11, "displayOrder": 5, "catIcon": "Charging.png", "subscriptionID": 3, "uniqueTestKey": "charging"},
+        {"diagnoseParamID": 34, "paramValue": "Color", "paramTypeID": 11, "displayOrder": 6, "catIcon": "Color.png", "subscriptionID": 3, "uniqueTestKey": "color"},
+        {"diagnoseParamID": 21, "paramValue": "Brightness", "paramTypeID": 11, "displayOrder": 7, "catIcon": "Brightness.png", "subscriptionID": 3, "uniqueTestKey": "brightness"}
+      ]
+    },
+    "scenario5_mixed_autoAndManual": {
+      "scenarioId": 5,
+      "scenarioName": "Mixed: Auto + Manual",
+      "description": "Combination of automatic tests and manual tests",
+      "testTypes": ["auto", "manual"],
+      "tests": [
+        {"diagnoseParamID": 1, "paramValue": "Wifi", "paramTypeID": 11, "displayOrder": 0, "catIcon": "Wifi.png", "subscriptionID": 3, "uniqueTestKey": "wifi"},
+        {"diagnoseParamID": 2, "paramValue": "Bluetooth", "paramTypeID": 11, "displayOrder": 1, "catIcon": "Bluetooth.png", "subscriptionID": 3, "uniqueTestKey": "bluetooth"},
+        {"diagnoseParamID": 3, "paramValue": "GPS", "paramTypeID": 11, "displayOrder": 2, "catIcon": "GPS.png", "subscriptionID": 3, "uniqueTestKey": "location"},
+        {"diagnoseParamID": 15, "paramValue": "Volume Up", "paramTypeID": 11, "displayOrder": 3, "catIcon": "VolumeUp.png", "subscriptionID": 3, "uniqueTestKey": "volume"},
+        {"diagnoseParamID": 22, "paramValue": "Power Button", "paramTypeID": 11, "displayOrder": 4, "catIcon": "PowerButton.png", "subscriptionID": 3, "uniqueTestKey": "power"},
+        {"diagnoseParamID": 13, "paramValue": "Battery Health", "paramTypeID": 11, "displayOrder": 5, "catIcon": "BatteryHealth.png", "subscriptionID": 3, "uniqueTestKey": "battery"},
+        {"diagnoseParamID": 16, "paramValue": "Finger Print", "paramTypeID": 11, "displayOrder": 6, "catIcon": "FingerPrint.png", "subscriptionID": 3, "uniqueTestKey": "fingerprint"},
+        {"diagnoseParamID": 27, "paramValue": "Face Lock", "paramTypeID": 11, "displayOrder": 7, "catIcon": "FaceLock.png", "subscriptionID": 3, "uniqueTestKey": "facelock"}
+      ]
+    },
+    "scenario6_mixed_userInputAndManual": {
+      "scenarioId": 6,
+      "scenarioName": "Mixed: User Input + Manual",
+      "description": "Combination of user input tests and manual tests",
+      "testTypes": ["userInput", "manual"],
+      "tests": [
+        {"diagnoseParamID": 1, "paramValue": "Wifi", "paramTypeID": 11, "displayOrder": 0, "catIcon": "Wifi.png", "subscriptionID": 3, "uniqueTestKey": "wifi"},
+        {"diagnoseParamID": 2, "paramValue": "Bluetooth", "paramTypeID": 11, "displayOrder": 1, "catIcon": "Bluetooth.png", "subscriptionID": 3, "uniqueTestKey": "bluetooth"},
+        {"diagnoseParamID": 3, "paramValue": "GPS", "paramTypeID": 11, "displayOrder": 2, "catIcon": "GPS.png", "subscriptionID": 3, "uniqueTestKey": "location"},
+        {"diagnoseParamID": 14, "paramValue": "Touch", "paramTypeID": 11, "displayOrder": 3, "catIcon": "Touch.png", "subscriptionID": 3, "uniqueTestKey": "touch"},
+        {"diagnoseParamID": 15, "paramValue": "Volume Up", "paramTypeID": 11, "displayOrder": 4, "catIcon": "VolumeUp.png", "subscriptionID": 3, "uniqueTestKey": "volume"},
+        {"diagnoseParamID": 34, "paramValue": "Color", "paramTypeID": 11, "displayOrder": 5, "catIcon": "Color.png", "subscriptionID": 3, "uniqueTestKey": "color"},
+        {"diagnoseParamID": 22, "paramValue": "Power Button", "paramTypeID": 11, "displayOrder": 6, "catIcon": "PowerButton.png", "subscriptionID": 3, "uniqueTestKey": "power"},
+        {"diagnoseParamID": 21, "paramValue": "Brightness", "paramTypeID": 11, "displayOrder": 7, "catIcon": "Brightness.png", "subscriptionID": 3, "uniqueTestKey": "brightness"},
+        {"diagnoseParamID": 19, "paramValue": "Back Button", "paramTypeID": 11, "displayOrder": 8, "catIcon": "BackButton.png", "subscriptionID": 3, "uniqueTestKey": "back"},
+        {"diagnoseParamID": 6, "paramValue": "Flash Light", "paramTypeID": 11, "displayOrder": 9, "catIcon": "Flashlight.png", "subscriptionID": 3, "uniqueTestKey": "flashlight"},
+        {"diagnoseParamID": 16, "paramValue": "Finger Print", "paramTypeID": 11, "displayOrder": 10, "catIcon": "FingerPrint.png", "subscriptionID": 3, "uniqueTestKey": "fingerprint"}
+      ]
+    },
+    "scenario7_allTypes": {
+      "scenarioId": 7,
+      "scenarioName": "All Test Types",
+      "description": "Complete mix of auto, user input, and manual tests",
+      "testTypes": ["auto", "userInput", "manual"],
+      "tests": [
+        {"diagnoseParamID": 1, "paramValue": "Wifi", "paramTypeID": 11, "displayOrder": 0, "catIcon": "Wifi.png", "subscriptionID": 3, "uniqueTestKey": "wifi"},
+        {"diagnoseParamID": 2, "paramValue": "Bluetooth", "paramTypeID": 11, "displayOrder": 1, "catIcon": "Bluetooth.png", "subscriptionID": 3, "uniqueTestKey": "bluetooth"},
+        {"diagnoseParamID": 3, "paramValue": "GPS", "paramTypeID": 11, "displayOrder": 2, "catIcon": "GPS.png", "subscriptionID": 3, "uniqueTestKey": "location"},
+        {"diagnoseParamID": 14, "paramValue": "Touch", "paramTypeID": 11, "displayOrder": 3, "catIcon": "Touch.png", "subscriptionID": 3, "uniqueTestKey": "touch"},
+        {"diagnoseParamID": 15, "paramValue": "Volume Up", "paramTypeID": 11, "displayOrder": 4, "catIcon": "VolumeUp.png", "subscriptionID": 3, "uniqueTestKey": "volume"},
+        {"diagnoseParamID": 13, "paramValue": "Battery Health", "paramTypeID": 11, "displayOrder": 5, "catIcon": "BatteryHealth.png", "subscriptionID": 3, "uniqueTestKey": "battery"},
+        {"diagnoseParamID": 34, "paramValue": "Color", "paramTypeID": 11, "displayOrder": 6, "catIcon": "Color.png", "subscriptionID": 3, "uniqueTestKey": "color"},
+        {"diagnoseParamID": 22, "paramValue": "Power Button", "paramTypeID": 11, "displayOrder": 7, "catIcon": "PowerButton.png", "subscriptionID": 3, "uniqueTestKey": "power"},
+        {"diagnoseParamID": 16, "paramValue": "Finger Print", "paramTypeID": 11, "displayOrder": 8, "catIcon": "FingerPrint.png", "subscriptionID": 3, "uniqueTestKey": "fingerprint"}
+      ]
+    },
+    "scenario8_quickAuto": {
+      "scenarioId": 8,
+      "scenarioName": "Quick Auto Tests",
+      "description": "Fast automatic tests only (minimal set)",
+      "testTypes": ["auto"],
+      "tests": [
+        {"diagnoseParamID": 1, "paramValue": "Wifi", "paramTypeID": 11, "displayOrder": 0, "catIcon": "Wifi.png", "subscriptionID": 3, "uniqueTestKey": "wifi"},
+        {"diagnoseParamID": 2, "paramValue": "Bluetooth", "paramTypeID": 11, "displayOrder": 1, "catIcon": "Bluetooth.png", "subscriptionID": 3, "uniqueTestKey": "bluetooth"},
+        {"diagnoseParamID": 3, "paramValue": "GPS", "paramTypeID": 11, "displayOrder": 2, "catIcon": "GPS.png", "subscriptionID": 3, "uniqueTestKey": "location"},
+        {"diagnoseParamID": 13, "paramValue": "Battery Health", "paramTypeID": 11, "displayOrder": 3, "catIcon": "BatteryHealth.png", "subscriptionID": 3, "uniqueTestKey": "battery"}
+      ]
+    },
+    "scenario9_sensorsOnly": {
+      "scenarioId": 9,
+      "scenarioName": "Sensors Only",
+      "description": "All sensor-related tests (auto-detected)",
+      "testTypes": ["auto"],
+      "tests": [
+        {"diagnoseParamID": 1, "paramValue": "Wifi", "paramTypeID": 11, "displayOrder": 0, "catIcon": "Wifi.png", "subscriptionID": 3, "uniqueTestKey": "wifi"},
+        {"diagnoseParamID": 2, "paramValue": "Bluetooth", "paramTypeID": 11, "displayOrder": 1, "catIcon": "Bluetooth.png", "subscriptionID": 3, "uniqueTestKey": "bluetooth"},
+        {"diagnoseParamID": 3, "paramValue": "GPS", "paramTypeID": 11, "displayOrder": 2, "catIcon": "GPS.png", "subscriptionID": 3, "uniqueTestKey": "location"},
+        {"diagnoseParamID": 25, "paramValue": "Light Sensor", "paramTypeID": 11, "displayOrder": 3, "catIcon": "LightSensor.png", "subscriptionID": 3, "uniqueTestKey": "light"},
+        {"diagnoseParamID": 29, "paramValue": "Proxy", "paramTypeID": 11, "displayOrder": 4, "catIcon": "Proxy.png", "subscriptionID": 3, "uniqueTestKey": "proximity"},
+        {"diagnoseParamID": 31, "paramValue": "Accelerometer", "paramTypeID": 11, "displayOrder": 5, "catIcon": "Accelerometer.png", "subscriptionID": 3, "uniqueTestKey": "accelerometer"},
+        {"diagnoseParamID": 32, "paramValue": "GyroSensor", "paramTypeID": 11, "displayOrder": 6, "catIcon": "GyroSensor.png", "subscriptionID": 3, "uniqueTestKey": "gyrosensor"},
+        {"diagnoseParamID": 30, "paramValue": "Magnet Sensor", "paramTypeID": 11, "displayOrder": 7, "catIcon": "MagnetSensor.png", "subscriptionID": 3, "uniqueTestKey": "magnet"}
+      ]
+    },
+    "scenario10_hardwareButtonsOnly": {
+      "scenarioId": 10,
+      "scenarioName": "Hardware Buttons Only",
+      "description": "All hardware button tests (manual)",
+      "testTypes": ["manual"],
+      "tests": [
+        {"diagnoseParamID": 1, "paramValue": "Wifi", "paramTypeID": 11, "displayOrder": 0, "catIcon": "Wifi.png", "subscriptionID": 3, "uniqueTestKey": "wifi"},
+        {"diagnoseParamID": 2, "paramValue": "Bluetooth", "paramTypeID": 11, "displayOrder": 1, "catIcon": "Bluetooth.png", "subscriptionID": 3, "uniqueTestKey": "bluetooth"},
+        {"diagnoseParamID": 3, "paramValue": "GPS", "paramTypeID": 11, "displayOrder": 2, "catIcon": "GPS.png", "subscriptionID": 3, "uniqueTestKey": "location"},
+        {"diagnoseParamID": 15, "paramValue": "Volume Up", "paramTypeID": 11, "displayOrder": 3, "catIcon": "VolumeUp.png", "subscriptionID": 3, "uniqueTestKey": "volume"},
+        {"diagnoseParamID": 22, "paramValue": "Power Button", "paramTypeID": 11, "displayOrder": 4, "catIcon": "PowerButton.png", "subscriptionID": 3, "uniqueTestKey": "power"},
+        {"diagnoseParamID": 19, "paramValue": "Back Button", "paramTypeID": 11, "displayOrder": 5, "catIcon": "BackButton.png", "subscriptionID": 3, "uniqueTestKey": "back"},
+        {"diagnoseParamID": 23, "paramValue": "Home Button", "paramTypeID": 11, "displayOrder": 6, "catIcon": "HomeButton.png", "subscriptionID": 3, "uniqueTestKey": "home"},
+        {"diagnoseParamID": 18, "paramValue": "Menu Button", "paramTypeID": 11, "displayOrder": 7, "catIcon": "MenuButton.png", "subscriptionID": 3, "uniqueTestKey": "menu"}
+      ]
+    },
+    "scenario11_sortedByType": {
+      "scenarioId": 11,
+      "scenarioName": "Sorted by Type (Flashlight/Camera/Facelock, Touch, Color, MultiTouch)",
+      "description": "Tests sorted: Flashlight/Camera/Facelock first, then Touch, Color, MultiTouch, then sensors and buttons",
+      "testTypes": ["auto", "userInput", "manual"],
+      "tests": [
+
+        {"diagnoseParamID": 1, "paramValue": "Wifi", "paramTypeID": 11, "displayOrder": 0, "catIcon": "https://cdn.dribbble.com/userupload/43358078/file/original-a3ea3a2046c48198b562034a33449b33.png?resize=1600x1200&vertical=center", "subscriptionID": 3, "uniqueTestKey": "wifi"},
+        {"diagnoseParamID": 2, "paramValue": "Bluetooth", "paramTypeID": 11, "displayOrder": 1, "catIcon": "Bluetooth.png", "subscriptionID": 3, "uniqueTestKey": "bluetooth"},
+        {"diagnoseParamID": 3, "paramValue": "GPS", "paramTypeID": 11, "displayOrder": 2, "catIcon": "GPS.png", "subscriptionID": 3, "uniqueTestKey": "location"},
+        {"diagnoseParamID": 6, "paramValue": "Flash Light", "paramTypeID": 11, "displayOrder": 3, "catIcon": "Flashlight.png", "subscriptionID": 3, "uniqueTestKey": "flashlight"},
+        {"diagnoseParamID": 4, "paramValue": "Front Camera", "paramTypeID": 11, "displayOrder": 4, "catIcon": "FrontCamera.png", "subscriptionID": 3, "uniqueTestKey": "cameras"},
+        {"diagnoseParamID": 27, "paramValue": "Face Lock", "paramTypeID": 11, "displayOrder": 5, "catIcon": "FaceLock.png", "subscriptionID": 3, "uniqueTestKey": "facelock"},
+        {"diagnoseParamID": 14, "paramValue": "Touch", "paramTypeID": 11, "displayOrder": 6, "catIcon": "Touch.png", "subscriptionID": 3, "uniqueTestKey": "touch"},
+        {"diagnoseParamID": 34, "paramValue": "Color", "paramTypeID": 11, "displayOrder": 7, "catIcon": "Color.png", "subscriptionID": 3, "uniqueTestKey": "color"},
+        {"diagnoseParamID": 35, "paramValue": "Multi Touch", "paramTypeID": 11, "displayOrder": 8, "catIcon": "MultiTouch.png", "subscriptionID": 3, "uniqueTestKey": "multitouch"},
+        {"diagnoseParamID": 28, "paramValue": "SD Card", "paramTypeID": 11, "displayOrder": 9, "catIcon": "SDCard.png", "subscriptionID": 3, "uniqueTestKey": "sdcard"},
+        {"diagnoseParamID": 12, "paramValue": "Charging", "paramTypeID": 11, "displayOrder": 10, "catIcon": "Charging.png", "subscriptionID": 3, "uniqueTestKey": "charging"},
+        {"diagnoseParamID": 13, "paramValue": "Battery Health", "paramTypeID": 11, "displayOrder": 11, "catIcon": "BatteryHealth.png", "subscriptionID": 3, "uniqueTestKey": "battery"},
+        {"diagnoseParamID": 29, "paramValue": "Proxy", "paramTypeID": 11, "displayOrder": 12, "catIcon": "Proxy.png", "subscriptionID": 3, "uniqueTestKey": "proximity"},
+        {"diagnoseParamID": 25, "paramValue": "Light Sensor", "paramTypeID": 11, "displayOrder": 13, "catIcon": "LightSensor.png", "subscriptionID": 3, "uniqueTestKey": "light"},
+        {"diagnoseParamID": 30, "paramValue": "Magnet Sensor", "paramTypeID": 11, "displayOrder": 14, "catIcon": "MagnetSensor.png", "subscriptionID": 3, "uniqueTestKey": "magnet"},
+        {"diagnoseParamID": 31, "paramValue": "Accelerometer", "paramTypeID": 11, "displayOrder": 15, "catIcon": "Accelerometer.png", "subscriptionID": 3, "uniqueTestKey": "accelerometer"},
+        {"diagnoseParamID": 32, "paramValue": "GyroSensor", "paramTypeID": 11, "displayOrder": 16, "catIcon": "GyroSensor.png", "subscriptionID": 3, "uniqueTestKey": "gyrosensor"},
+        {"diagnoseParamID": 15, "paramValue": "Volume Up", "paramTypeID": 11, "displayOrder": 17, "catIcon": "VolumeUp.png", "subscriptionID": 3, "uniqueTestKey": "volume"},
+        {"diagnoseParamID": 22, "paramValue": "Power Button", "paramTypeID": 11, "displayOrder": 18, "catIcon": "PowerButton.png", "subscriptionID": 3, "uniqueTestKey": "power"},
+        {"diagnoseParamID": 19, "paramValue": "Back Button", "paramTypeID": 11, "displayOrder": 19, "catIcon": "BackButton.png", "subscriptionID": 3, "uniqueTestKey": "back"},
+        {"diagnoseParamID": 23, "paramValue": "Home Button", "paramTypeID": 11, "displayOrder": 20, "catIcon": "HomeButton.png", "subscriptionID": 3, "uniqueTestKey": "home"},
+        {"diagnoseParamID": 18, "paramValue": "Menu Button", "paramTypeID": 11, "displayOrder": 21, "catIcon": "MenuButton.png", "subscriptionID": 3, "uniqueTestKey": "menu"},
+        {"diagnoseParamID": 17, "paramValue": "Rotation", "paramTypeID": 11, "displayOrder": 22, "catIcon": "Rotation.png", "subscriptionID": 3, "uniqueTestKey": "rotation"},
+        {"diagnoseParamID": 7, "paramValue": "Network", "paramTypeID": 11, "displayOrder": 23, "catIcon": "Network.png", "subscriptionID": 3, "uniqueTestKey": "networks"},
+        {"diagnoseParamID": 21, "paramValue": "Brightness", "paramTypeID": 11, "displayOrder": 24, "catIcon": "Brightness.png", "subscriptionID": 3, "uniqueTestKey": "brightness"},
+        {"diagnoseParamID": 11, "paramValue": "Headphone", "paramTypeID": 11, "displayOrder": 25, "catIcon": "Headphone.png", "subscriptionID": 3, "uniqueTestKey": "headphones"},
+        {"diagnoseParamID": 9, "paramValue": "Vibration", "paramTypeID": 11, "displayOrder": 26, "catIcon": "Vibration.png", "subscriptionID": 3, "uniqueTestKey": "vibration"},
+        {"diagnoseParamID": 10, "paramValue": "Microphone", "paramTypeID": 11, "displayOrder": 27, "catIcon": "Microphone.png", "subscriptionID": 3, "uniqueTestKey": "microphone"},
+        {"diagnoseParamID": 16, "paramValue": "Finger Print", "paramTypeID": 11, "displayOrder": 28, "catIcon": "FingerPrint.png", "subscriptionID": 3, "uniqueTestKey": "fingerprint"},
+        {"diagnoseParamID": 33, "paramValue": "OTG", "paramTypeID": 11, "displayOrder": 29, "catIcon": "ic_otg.png", "subscriptionID": 3, "uniqueTestKey": "otg"},
+        {"diagnoseParamID": 36, "paramValue": "Sar Value", "paramTypeID": 11, "displayOrder": 30, "catIcon": "SarValue.png", "subscriptionID": 3, "uniqueTestKey": "sar"},
+        {"diagnoseParamID": 37, "paramValue": "NFC Detection", "paramTypeID": 11, "displayOrder": 31, "catIcon": "NfcDetection.png", "subscriptionID": 3, "uniqueTestKey": "nfc"}
+      ]
+    }
+  }
+}
+

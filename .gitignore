@@ -1,0 +1,24 @@
+## General
+.DS_Store
+*.iml
+.idea/
+.vscode/
+
+## Gradle
+.gradle/
+**/build/
+
+## Android local config
+local.properties
+android/local.properties
+android/key.properties
+
+## Flutter / Dart
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+flutter_module/.android/
+flutter_module/build/
+
