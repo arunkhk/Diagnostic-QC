@@ -36,7 +36,7 @@ class _TouchScreenTestScreenState extends ConsumerState<TouchScreenTestScreen> {
   int _totalBoxes = 0;
   Timer? _inactivityTimer;
   Timer? _countdownTimer;
-  int _remainingSeconds = 10;
+  int _remainingSeconds = 3;
   bool _showTimer = true;
   final GlobalKey<TouchGridViewState> _gridKey = GlobalKey<TouchGridViewState>();
 
@@ -85,7 +85,7 @@ class _TouchScreenTestScreenState extends ConsumerState<TouchScreenTestScreen> {
       _touchScreenWorking = null;
       _backButtonPressCount = 0;
       _filledBoxesCount = 0;
-      _remainingSeconds = 10;
+      _remainingSeconds = 3;
       _showTimer = true;
     });
     
@@ -98,7 +98,7 @@ class _TouchScreenTestScreenState extends ConsumerState<TouchScreenTestScreen> {
 
   void _startCountdownTimer() {
     _countdownTimer?.cancel();
-    _remainingSeconds = 10;
+    _remainingSeconds = 3;
     
     _countdownTimer = Timer.periodic(const Duration(seconds: 1), (timer) {
       if (!mounted || !_testStarted || _testComplete) {
@@ -111,10 +111,10 @@ class _TouchScreenTestScreenState extends ConsumerState<TouchScreenTestScreen> {
           _remainingSeconds--;
         });
       } else {
-        // Timer expired - mark as failed
+        // Timer expired – show Fail/Skip choice instead of auto-failing
         timer.cancel();
         if (mounted) {
-          _endTest(false);
+          _showTimeoutDialog();
         }
       }
     });
@@ -137,7 +137,7 @@ class _TouchScreenTestScreenState extends ConsumerState<TouchScreenTestScreen> {
     if (_testStarted && !_testComplete) {
       setState(() {
         _showTimer = true;
-        _remainingSeconds = 10;
+        _remainingSeconds = 3;
       });
       _startCountdownTimer();
     }
@@ -154,6 +154,50 @@ class _TouchScreenTestScreenState extends ConsumerState<TouchScreenTestScreen> {
     if (_filledBoxesCount == _totalBoxes) {
       _endTest(true);
     }
+  }
+
+  /// When the timeout is reached, show a dialog with Fail/Skip instead of auto-failing.
+  void _showTimeoutDialog() {
+    // Stop timers and hide the timer UI
+    _inactivityTimer?.cancel();
+    _countdownTimer?.cancel();
+
+    if (!mounted) return;
+
+    setState(() {
+      _testComplete = true;
+      _touchScreenWorking = false;
+      _showTimer = false;
+    });
+
+    showDialog<void>(
+      context: context,
+      barrierDismissible: false,
+      builder: (context) {
+        return AlertDialog(
+          title: const Text('Touch Test Time Over'),
+          content: const Text(
+            'Time is over for the touch test. You can mark this test as Fail or Skip it.',
+          ),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+                _handleSkip();
+              },
+              child: Text(AppStrings.skipButton),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+                _handleFail();
+              },
+              child: Text(AppStrings.failButton),
+            ),
+          ],
+        );
+      },
+    );
   }
 
   void _endTest(bool passed) {
@@ -234,6 +278,12 @@ class _TouchScreenTestScreenState extends ConsumerState<TouchScreenTestScreen> {
     TestResultHelper.savePass(ref, TestConfig.testIdTouch);
     
     // Navigate to next test based on API order
+    _navigateToNextTest();
+  }
+
+  void _handleSkip() {
+    // Save Touch test result as skipped
+    TestResultHelper.saveSkip(ref, TestConfig.testIdTouch);
     _navigateToNextTest();
   }
 
@@ -350,13 +400,7 @@ class _TouchScreenTestScreenState extends ConsumerState<TouchScreenTestScreen> {
                   title: AppStrings.welcomeTitle,
                   version: AppStrings.appVersion,
                   onBack: () => Navigator.of(context).pop(),
-                  onSkip: () {
-                    // Mark Touch test as skipped
-                    TestResultHelper.saveSkip(ref, TestConfig.testIdTouch);
-                    
-                    // Navigate to next test based on API order
-                    _navigateToNextTest();
-                  },
+                  onSkip: _handleSkip,
                   skipText: AppStrings.skipButton,
                 ),
 

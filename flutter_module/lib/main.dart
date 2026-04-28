@@ -33,10 +33,8 @@ class DiagnosisApp extends ConsumerWidget {
     // Initialize global API loading notifier
     final apiLoadingNotifier = ref.read(apiLoadingProvider.notifier);
     setGlobalApiLoadingNotifier(apiLoadingNotifier);
-
     // Watch auth state to determine initial screen
     final authState = ref.watch(authProvider);
-
     return MaterialApp(
       title: AppStrings.appName,
       debugShowCheckedModeBanner: false,
@@ -47,4 +45,5 @@ class DiagnosisApp extends ConsumerWidget {
           : const WelcomeScreen(),
     );
   }
+
 }

@@ -465,11 +465,10 @@ class AppConstants {
   static const double progressPerScreen = 1.0 / totalScreens; // ~3.33% per screen
   // Default values
   static const int defaultWifiNetworksCount = 12;
-
   static const int imeiLength = 15;
   static const int validationDelaySeconds = 1;
-  
   // Diagnosis testing
+
   static const int diagnosisTestDurationSeconds = 3;
   static const double progressIncrementPerTest = 0.0167; // ~1.67% per test (5% / 3 tests)
 }
