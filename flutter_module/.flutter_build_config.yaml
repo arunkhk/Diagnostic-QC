@@ -1,0 +1,5 @@
+# Flutter build configuration
+# This file is used to configure automatic iOS preservation
+
+auto_preserve_ios: true
+

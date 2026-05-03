@@ -1,0 +1,34 @@
+## General
+.DS_Store
+*.iml
+.idea/
+.vscode/
+
+## Gradle
+.gradle/
+**/build/
+
+## CMake / Android native intermediates (local machine paths)
+**/.cxx/
+
+## Flutter module generated iOS embedder
+flutter_module/.ios/
+
+## Android local config
+local.properties
+android/local.properties
+android/key.properties
+
+## Flutter / Dart
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+flutter_module/.android/
+flutter_module/build/
+
+
+## Signing (never commit)
+*.jks
+**/upload-keystore.jks
